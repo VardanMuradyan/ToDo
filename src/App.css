@@ -1,38 +1,215 @@
+@import "./reset/reset.css";
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.input label input {
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 26px;
+    color: #e70d0d;
+}
+
+.ul {
+    margin-bottom: 10px;
+}
+
+.nav_list {
+    background-color: #5c5d69;
+    list-style-type: none;
+}
+
+.nav_list a {
+    display: block;
+    font-weight: 700;
+    padding: 8px 10px;
+    color: rgba(0, 0, 0, 0.9);
+    background-color: rgb(6, 117, 117);
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.nav_list a:hover {
+    background-color: rgb(28, 154, 154);
+    color: white;
+}
+
+.h2 {
+    font-size: 40px;
+}
+
+.number {
+    font-weight: 700;
+    font-size: 40px;
+    color: #16839b;
+    font-family: Sylfaen, system-ui;
+}
+
+.btn {
+    padding: 8px 30px;
+    font-size: 30px;
+    font-family: Arial, fantasy;
+    font-weight: 700;
+    background-color: #547979;
+    color: #5c5d69;
+}
+
+.add_delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/*/////////*/
+
+body{
+    background-color: rgba(56, 62, 65, 0.8);
+}
+
+.todo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    overflow: auto;
+    background-color: rgba(124, 176, 176, 0.69);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 34px rgba(35, 35, 35, 0.94);
+}
+
+.todo__box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.todo__text {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.todo__out-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo__out_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    max-width: 460px;
+    border-radius: 40px;
+}
+
+.todo__out_text p {
+    flex: 1;
+    padding: 8px 30px;
+    font-size: 20px;
+    font-family: Arial, fantasy;
+    font-weight: 700;
+    background-color: #547979;
+    color: #ffffff;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.todo__btn1 {
+    cursor: pointer;
+    padding: 8px 10px;
+    font-size: 20px;
+    font-family: Arial, fantasy;
+    font-weight: 700;
+    background-color: #547979;
+    text-shadow: 0 0 6px white;
+    color: #5c5d69;
+    transition: color 280ms ease-out;
+    border: none;
+    margin-left: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.todo__btn1:hover {
+    color: #ffffff;
+}
+
+.todo__input2 {
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 26px;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    background-clip: padding-box;
+    background-color: #547979;
+}
+.todo__input2:focus{
+    outline: none;
+}
+.todo__input2::placeholder {
+    color: #ffffff;
+    opacity: 0.8;}
+
+
+.todo__edite-text{
+    color: rgba(0, 0, 0, 0.9);
+    background-color: #b8d0d0;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.todo__edite-text:focus{
+    outline: none;
+}
+
+.todo__edite-text::placeholder{
+    color: rgba(225, 0, 0, 0.9);
+    opacity: 0.8;
 }
