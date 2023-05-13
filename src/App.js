@@ -14,10 +14,10 @@ class App extends Component {
         this.state = {
             x: 10
         }
-        console.log("hi")
+    //    console.log("hi")
     }
     componentDidMount() {
-        console.log("did mount")
+     //   console.log("did mount")
     }
 
     handleClick = () => {
@@ -36,7 +36,7 @@ class App extends Component {
                 <hr/>
                 <Add_delete/>
                 <hr/>*/}
-                <ToDoList/>
+                {/*<ToDoList/>*/}
                 <ToDoListUse/>
 
             </div>

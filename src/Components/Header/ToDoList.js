@@ -52,7 +52,7 @@ class ToDoList extends Component {
 
 
     removeButton = (index) => {
-        console.log(index)
+     //   console.log(index)
         const newList = this.state.list.filter((num, i) => i !== index)
         this.setState({
             list: newList,
@@ -71,7 +71,7 @@ class ToDoList extends Component {
     handleSave = (index) => {
         let newArr = this.state.list;
         newArr[index] = this.state.savedInput
-        console.log(this.state.list[index])
+       // console.log(this.state.list[index])
         this.setState({
             list: newArr,
             editInput: -1
